@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Electrolize', sans-serif;
+     height: 200vh;
+}
+
+
+/* header başlangıç */
+
+header {
+    z-index: 1;
+    position: sticky;
+    background-color: black;
+    color: #E5E5E5;
+    height: 44px;
+    top: 0
+    
+}
+
+
+
+.navbar {
+
+
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+
+.navseçenek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 15px;
+
+}
+
+.navseçenek>:nth-child(1) {
+    font-weight: bold;
+
+}
+
+.navlogo {
+
+    margin-left: 40px;
+}
+
+.navtext {
+    cursor: pointer;
+}
+
+.profile {
+    margin-right: 13px;
+    padding: top 5px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+}
+
+.navson {
+
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+
+}
+
+
+
+
+.profilepicture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.navlogo {
+    color: red;
+    font-size: 25px;
+}
+
+.darklightkapsayıcı {
+
+    border-radius: 30px;
+    background-color: white;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.mod {
+    color: goldenrod;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+}
+
+/* header sonu  */
+
+
+
+.sidebar {
+
+    height: 100%;
+    width: 40px;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    row-gap: 15px;
+
+
+}
+
+.sidebar i {
+    cursor: pointer;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 3px;
+    font-size: 15px;
+}
+
+/* sidebar  son  */
+
+/* saction  başlangıç  */
+
+
+
+.title {
+    margin-left: 30px;
+}
+
+.buttonkapsayıcı {
+
+    margin-left: 30px;
+}
+
+
+
+
+.ikincikapsayıcı {
+
+
+
+    height: calc(100vh - 40px);
+
+    background: url(spiderman.jpg);
+    padding: 40px;
+    background-size: 100% 100%;
+
+
+}
+
+.title {
+
+    width: 30%;
+
+
+
+}
+
+.title img {
+    width: 400px;
+}
+
+.paragraf {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: small;
+    color:black
+}
+
+.buttonkapsayıcı {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.buttonkapsayıcı button {
+    padding: 10px 25px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    column-gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+
+.dahafazlabilgibutton {
+    background-color: rgb(145, 142, 142, 0.5);
+    color: white;
+}
+
+.movielistselect{
+margin: 20px 0 20px 50px ;
+padding:20px ;
+}
+
+.movielistselect select{
+    padding: 7px 0;
+    width:125px ;
+    color: white;
+    background-color:black
+    
+    
+}
+.sectionkapsayıcı{
+    background-color: black;
+    color: white;
+}
+
+.moviegenelkapsayıcı{
+    margin-left: 60px;
+
+}
+
+.fimlresimler{
+
+list-style: none;
+padding: 0;
+height: 300px;
+display: flex;
+align-items: center;
+column-gap: 15px;
+margin-top: -60px;
+}
+
+.imgresimetiketi{
+width: 185px;
+height: 110px;
+object-fit: cover;
+transition: 1s all ease-in-out;
+
+}
+
+.ad{
+    background-color: rgb(40,40, 40,0.4);
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight:bold ;
+    position: absolute;
+    opacity: 0;
+    left: 50px;
+    top:10% ;
+    transition: 1s all ease-in-out;
+   
+
+
+}
+.movieiçerik{
+position: relative;
+
+}
+
+.movieiçerik:hover .ad ,.movieiçerik:hover .movieiçerikicon
+{
+opacity: 1;
+}
+
+.movieiçerik:hover .imgresimetiketi{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+
+
+.movieiçerikicon{
+    background-color: rgb(40,40, 40,0.4);
+    padding:  10px;
+      font-weight:bold ;
+    position: absolute;
+    left: 50px;
+    bottom:10% ;
+    display: flex;
+    column-gap: 20px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+   
+    
+}
+
+.movieiçerikicon i{
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 12px;
+    transition: 0.5 all ease;
+    
+}
+
+.movieiçerikicon i:hover{
+    opacity: 1;
+}
+
+.movieresimlerkapsayıcı{
+    overflow: hidden;
+}
+
+.moviebaşlık{
+    font-size: 25px;
+}
+
+@media only screen and (max-width:800px){
+
+    .navseçenek{
+        display: none;
+    }
+
+    .title img {
+        width:200px;
+    }
+
+    .title p {
+        height: 20vh; 
+       overflow:hidden;
+       display: -webkit-box;
+       -webkit-box-orient: vertical;
+       -webkit-box-clamp: 5;
+       max-width: 200px;
+       padding: 0;
+    }
+}
