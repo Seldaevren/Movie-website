@@ -4,4 +4,4 @@ Film websitesi geliştirildi.
 -HTML
 -CSS
 # Ekran Görüntüleri
-![](Ekran görüntüsü2024-02-03 005119.png)
+
